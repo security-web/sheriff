@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sheriff/static/css/main.0016082b.css",
-    "main.js": "/sheriff/static/js/main.04a7e6a2.js",
+    "main.css": "/sheriff/static/css/main.3b21e682.css",
+    "main.js": "/sheriff/static/js/main.04d06416.js",
     "index.html": "/sheriff/index.html",
-    "main.0016082b.css.map": "/sheriff/static/css/main.0016082b.css.map",
-    "main.04a7e6a2.js.map": "/sheriff/static/js/main.04a7e6a2.js.map"
+    "main.3b21e682.css.map": "/sheriff/static/css/main.3b21e682.css.map",
+    "main.04d06416.js.map": "/sheriff/static/js/main.04d06416.js.map"
   },
   "entrypoints": [
-    "static/css/main.0016082b.css",
-    "static/js/main.04a7e6a2.js"
+    "static/css/main.3b21e682.css",
+    "static/js/main.04d06416.js"
   ]
 }
