@@ -1,0 +1,5 @@
+.App {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}

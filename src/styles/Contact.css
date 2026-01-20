@@ -1,0 +1,351 @@
+/* Contact Page Container */
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  padding: 120px 2rem 4rem;
+  position: relative;
+}
+
+/* Subtle pattern overlay */
+.contact-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.contact-page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.contact-page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-page-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  letter-spacing: -1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.contact-page-subtitle {
+  font-size: 1.1rem;
+  color: #71797E;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Content - Two Boxes */
+.contact-page-content {
+  display: flex;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+/* Left Box - Contact Info */
+.contact-page-left {
+  flex: 1;
+  background: rgba(42, 42, 42, 0.5);
+  border: 1px solid rgba(113, 121, 126, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.contact-page-left:hover {
+  border-color: rgba(129, 133, 137, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Info List */
+.contact-page-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-page-info-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border-left: 3px solid transparent;
+}
+
+.contact-page-info-item:hover {
+  background: rgba(113, 121, 126, 0.15);
+  border-left-color: #71797E;
+  transform: translateX(8px);
+}
+
+.contact-page-icon {
+  font-size: 1.75rem;
+  min-width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(113, 121, 126, 0.2);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.contact-page-info-item:hover .contact-page-icon {
+  background: rgba(113, 121, 126, 0.35);
+  transform: scale(1.1);
+}
+
+.contact-page-details {
+  flex: 1;
+}
+
+.contact-page-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.3px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.contact-page-link {
+  display: block;
+  font-size: 0.95rem;
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-bottom: 0.35rem;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.contact-page-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.contact-page-text {
+  font-size: 0.95rem;
+  color: #e5e5e5;
+  margin: 0 0 0.35rem 0;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+.contact-page-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Right Box - Map */
+.contact-page-right {
+  flex: 1;
+  position: relative;
+  background: rgba(42, 42, 42, 0.5);
+  border: 1px solid rgba(113, 121, 126, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 350px;
+  transition: all 0.4s ease;
+}
+
+.contact-page-right:hover {
+  border-color: rgba(129, 133, 137, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-page-map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-page-map-container iframe {
+  border-radius: 12px;
+  filter: grayscale(0.3) contrast(1.1);
+  transition: filter 0.4s ease;
+}
+
+.contact-page-right:hover .contact-page-map-container iframe {
+  filter: grayscale(0) contrast(1);
+}
+
+.contact-page-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.2) 0%, rgba(59, 59, 59, 0.1) 100%);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+  border-radius: 12px;
+}
+
+.contact-page-right:hover .contact-page-map-overlay {
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .contact-page-content {
+    gap: 2.5rem;
+  }
+
+  .contact-page-left,
+  .contact-page-right {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-page-title {
+    font-size: 3rem;
+  }
+
+  .contact-page-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-page-left {
+    padding: 2rem;
+  }
+
+  .contact-page-info-item {
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+
+  .contact-page-icon {
+    font-size: 1.6rem;
+    min-width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 100px 1.5rem 3rem;
+  }
+
+  .contact-page-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-page-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-page-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-page-left,
+  .contact-page-right {
+    padding: 1.75rem;
+  }
+
+  .contact-page-right {
+    min-height: 350px;
+  }
+
+  .contact-page-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .contact-page-info-list {
+    gap: 1.25rem;
+  }
+
+  .contact-page-info-item {
+    padding: 0.9rem;
+  }
+
+  .contact-page-label {
+    font-size: 0.95rem;
+  }
+
+  .contact-page-link,
+  .contact-page-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 80px 1.25rem 2.5rem;
+  }
+
+  .contact-page-header {
+    margin-bottom: 2rem;
+  }
+
+  .contact-page-title {
+    font-size: 2rem;
+  }
+
+  .contact-page-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .contact-page-content {
+    gap: 1.5rem;
+  }
+
+  .contact-page-left,
+  .contact-page-right {
+    padding: 1.5rem;
+  }
+
+  .contact-page-info-list {
+    gap: 1rem;
+  }
+
+  .contact-page-info-item {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+
+  .contact-page-icon {
+    font-size: 1.5rem;
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .contact-page-label {
+    font-size: 0.9rem;
+  }
+
+  .contact-page-link,
+  .contact-page-text {
+    font-size: 0.85rem;
+  }
+
+  .contact-page-right {
+    min-height: 300px;
+  }
+}

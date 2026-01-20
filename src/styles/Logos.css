@@ -1,0 +1,223 @@
+/* Logos Section */
+.logos-section {
+  padding: 5rem 4rem;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+/* Subtle pattern overlay - same as landing */
+.logos-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.logos-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Use same header style from Landing */
+.category-header-logos {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 3.5rem 0;
+  letter-spacing: -0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Beautiful gradient line under category title */
+.category-header-logos::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 80px;
+  height: 2px;
+  box-shadow: 0 0 12px rgba(113, 121, 126, 0.6);
+}
+
+.logos-swiper {
+  padding: 20px 0 60px 0;
+}
+
+.logo-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(113, 121, 126, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-slide::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-slide:hover {
+  background: rgba(113, 121, 126, 0.15);
+  transform: translateY(-8px);
+  border-color: rgba(129, 133, 137, 0.4);
+  box-shadow: 0 8px 25px rgba(113, 121, 126, 0.3);
+}
+
+.logo-slide:hover::before {
+  height: 100%;
+}
+
+.logo-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.7);
+  transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.logo-slide:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Swiper Navigation Buttons - matching Landing colors */
+.logos-swiper .swiper-button-next,
+.logos-swiper .swiper-button-prev {
+  color: #71797E;
+  transition: all 0.3s ease;
+}
+
+.logos-swiper .swiper-button-next:hover,
+.logos-swiper .swiper-button-prev:hover {
+  color: #818589;
+}
+
+.logos-swiper .swiper-button-next::after,
+.logos-swiper .swiper-button-prev::after {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Swiper Pagination - matching Landing colors */
+.logos-swiper .swiper-pagination-bullet {
+  background: #71797E;
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.logos-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #818589;
+  width: 30px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .logos-section {
+    padding: 4rem 3rem;
+  }
+
+  .category-header-logos {
+    font-size: 2rem;
+  }
+
+  .category-header-logos::after {
+    width: 60px;
+  }
+
+  .logo-slide {
+    height: 130px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-section {
+    padding: 3rem 2rem;
+  }
+
+  .category-header-logos {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .category-header-logos::after {
+    width: 50px;
+  }
+
+  .logo-slide {
+    height: 120px;
+    padding: 20px;
+  }
+
+  .logos-swiper .swiper-button-next,
+  .logos-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .category-header-logos {
+    font-size: 1.5rem;
+  }
+
+  .category-header-logos::after {
+    width: 40px;
+  }
+
+  .logo-slide {
+    height: 100px;
+    padding: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  background-attachment: fixed;
+}
