@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import Logos from './components/Logos';
 import Footer from './components/Footer';
 import Products from './components/Products';
+import Partners from './components/Partners';
 import Login from './components/Login';
 import Admin from './components/Admin';
 import Company from './components/Company';
@@ -31,7 +32,7 @@ function App() {
               <Footer />
             </>
           } />
-          
+
           <Route path="/products" element={
             <>
               <Header />
@@ -44,6 +45,14 @@ function App() {
             <>
               <Header />
               <Company />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/partners" element={
+            <>
+              <Header />
+              <Partners />
               <Footer />
             </>
           } />

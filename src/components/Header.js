@@ -62,8 +62,7 @@ function Header() {
           <Link to="/company" onClick={closeMenu}>კომპანია</Link>
           <Link to="/products" onClick={closeMenu}>პროდუქცია</Link>
           <a href="#discounts" onClick={closeMenu}>ფასდაკლებები</a>
-          <a href="#partners" onClick={closeMenu}>პარტნიორები</a>
-          <a href="#brands" onClick={closeMenu}>ბრენდები</a>
+          <Link to="/partners" onClick={closeMenu}>პარტნიორები</Link>
           <Link to="/contact" onClick={closeMenu}>კონტაქტი</Link>
         </nav>
 
@@ -71,6 +70,7 @@ function Header() {
           <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
         </button>
       </div>
+
       {isMenuOpen && <div className="menu-overlay" onClick={toggleMenu}></div>}
     </header>
   )

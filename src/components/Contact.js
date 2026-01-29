@@ -24,8 +24,7 @@ function Contact() {
                 <div className="contact-page-icon">📞</div>
                 <div className="contact-page-details">
                   <h3 className="contact-page-label">ტელეფონი</h3>
-                  <a href="tel:+995555123456" className="contact-page-link">+995 555 12 34 56</a>
-                  <a href="tel:+995555654321" className="contact-page-link">+995 555 65 43 21</a>
+                  <a href="tel:+995597996633" className="contact-page-link">+995 597 99 66 33</a>
                 </div>
               </div>
 
@@ -33,8 +32,7 @@ function Contact() {
                 <div className="contact-page-icon">✉️</div>
                 <div className="contact-page-details">
                   <h3 className="contact-page-label">ელ-ფოსტა</h3>
-                  <a href="mailto:info@sheriff.ge" className="contact-page-link">info@sheriff.ge</a>
-                  <a href="mailto:support@sheriff.ge" className="contact-page-link">support@sheriff.ge</a>
+                  <a href="mailto:www.sheriff.georgia@gmail.com" className="contact-page-link">www.sheriff.georgia@gmail.com</a>
                 </div>
               </div>
 
@@ -43,7 +41,7 @@ function Contact() {
                 <div className="contact-page-details">
                   <h3 className="contact-page-label">მისამართი</h3>
                   <p className="contact-page-text">თბილისი, საქართველო</p>
-                  <p className="contact-page-text">ვაჟა-ფშაველას გამზირი 45</p>
+                  <p className="contact-page-text">დავით სარაჯიშვილის 1</p>
                 </div>
               </div>
 
@@ -63,7 +61,7 @@ function Contact() {
           <div className="contact-page-right">
             <div className="contact-page-map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.2263489934855!2d44.78446831541947!3d41.72447837923401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61342ecb8e2f8b6f!2sVazha-Pshavela%20Ave%2C%20Tbilisi%2C%20Georgia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.0943796516373!2d44.7938677!3d41.7150756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cdd15f8c5c7%3A0x7f8b8e3e6f8a0d5d!2sDavit%20Sarajishvili%20St%201%2C%20Tbilisi%2C%20Georgia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
